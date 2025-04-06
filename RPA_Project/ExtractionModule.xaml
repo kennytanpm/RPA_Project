@@ -169,18 +169,18 @@
                       </Sequence>
                     </If.Then>
                     <If.Else>
-                      <Sequence sap:VirtualizedContainerService.HintSize="376,323" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                      <Sequence sap:VirtualizedContainerService.HintSize="530,896" sap2010:WorkflowViewState.IdRef="Sequence_6">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,143" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(&quot;Brand&quot;).ToString + CurrentRow(&quot;Model&quot;).ToString + &quot; in Shopee else loop&quot;]" />
-                        <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="334,52" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="488,143" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(&quot;Brand&quot;).ToString + CurrentRow(&quot;Model&quot;).ToString + &quot; in Shopee else loop&quot;]" />
+                        <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="488,625" sap2010:WorkflowViewState.IdRef="TryCatch_2">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                           <TryCatch.Try>
@@ -194,7 +194,7 @@
                                   <x:Boolean x:Key="IsPinned">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,143" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(&quot;Brand&quot;).ToString + CurrentRow(&quot;Model&quot;).ToString + &quot; Start Shopee try loop&quot;]" />
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(&quot;Brand&quot;).ToString + CurrentRow(&quot;Model&quot;).ToString + &quot; Start Shopee try loop&quot;]" />
                               <uix:NSetText DisplayName="Set Text 'shopee.sg/Sony-Singapor…'" sap:VirtualizedContainerService.HintSize="434,162" sap2010:WorkflowViewState.IdRef="NSetText_1" ScopeIdentifier="fd87e0d2-bd3f-4a06-8dd3-ecd7620dbdee" Text="[CurrentRow(&quot;URL (Shopee)&quot;).ToString]" Version="V3">
                                 <uix:NSetText.Target>
                                   <uix:TargetAnchorable DesignTimeRectangle="201, 51, 227, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'shopee.sg/Sony-Singapor…'" FullSelectorArgument="&lt;ctrl name='Sony Singapore 65&amp;quot;X85L | 4K Full Array LED TV | BRAVIA | 65X85L *' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Sony Singapore 65&amp;quot;X85L | 4K Full Array LED TV | BRAVIA | 65X85L *' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' automationid='' /&gt;" Guid="bb72e938-6a87-45a0-a983-26ed860907ad" InformativeScreenshot="5b6757ca567e2a10a432f63e0f42605a.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Sony Singapore 65&amp;quot;X85L | 4K Full Array LED TV | BRAVIA | 65X85L *' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
@@ -209,10 +209,10 @@
                               <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="Delay_2" />
                               <uix:NGetText DisplayName="Get Text '$6,899.00'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="fd87e0d2-bd3f-4a06-8dd3-ecd7620dbdee" TextString="[ShopeePromotionPrice]" Version="V3">
                                 <uix:NGetText.Target>
-                                  <uix:TargetAnchorable BrowserURL="https://shopee.sg/Hisense-UX-65-75-85-inch-ULED-X-4K-Mini-LED-Smart-TV-Hi-View-Engine-X-Dynamic-X-Display-144Hz-i.582332390.13668508028" DesignTimeRectangle="889, 403, 121, 32" DesignTimeScaleFactor="0.8999999761581421" ElementType="Text" FriendlyName="'$6,899.00'" FullSelectorArgument="&lt;webctrl aaname='$6,899.00' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='DIV' type='' class='IZPeQz B67UQ0' /&gt;" Guid="405965e2-4952-497c-812a-d8f2a88081a8" InformativeScreenshot="b1c4829920c2d2f0651eac1d2e5b0f39.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='nameStorage:?wm_referrer=https%3A%2F%2Fwww.lazada.sg%2Fproducts%2Fhisense-l9h-100120-inch-4k-ultra-short-throw-laser-cinema-tv-alr-screen-3000-lumens-bt2020-107-i-memc-ultra-motion-hdr-10-dolby-atmos-ultra-short-throw-ust-laser-projector-ambient-light-reje*' title='Hisense UX 65/75/85 inch ULED X 4K Mini LED Smart TV | Hi View Engine X | Dynamic X Display | 144Hz | Shopee Singapore' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable BrowserURL="https://shopee.sg/Hisense-UX-65-75-85-inch-ULED-X-4K-Mini-LED-Smart-TV-Hi-View-Engine-X-Dynamic-X-Display-144Hz-i.582332390.13668508028" DesignTimeRectangle="889, 403, 121, 32" DesignTimeScaleFactor="0.8999999761581421" ElementType="Text" FriendlyName="'$6,899.00'" FullSelectorArgument="&lt;webctrl aaname='$6,899.00' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='DIV' type='' class='IZPeQz B67UQ0' /&gt;" Guid="405965e2-4952-497c-812a-d8f2a88081a8" InformativeScreenshot="258cceb33f3c4649a54c50704cf0a797.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='nameStorage:?wm_referrer=https%3A%2F%2Fwww.lazada.sg%2Fproducts%2Fhisense-l9h-100120-inch-4k-ultra-short-throw-laser-cinema-tv-alr-screen-3000-lumens-bt2020-107-i-memc-ultra-motion-hdr-10-dolby-atmos-ultra-short-throw-ust-laser-projector-ambient-light-reje*' title='Hisense UX 65/75/85 inch ULED X 4K Mini LED Smart TV | Hi View Engine X | Dynamic X Display | 144Hz | Shopee Singapore' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
                                     <uix:TargetAnchorable.Anchors>
                                       <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                                        <uix:Target DesignTimeRectangle="1421, 356, 48, 24" ElementType="Button" FriendlyName="'Report'" FullSelectorArgument="&lt;webctrl class='YysGiT' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl class='YysGiT' tag='BUTTON' type='' aaname='Report' check:innerText='Report' /&gt;" SearchSteps="FuzzySelector" />
+                                        <uix:Target DesignTimeRectangle="1421, 356, 48, 24" ElementType="Button" FriendlyName="'Report'" FullSelectorArgument="&lt;webctrl class='YysGiT' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl class='YysGiT' tag='BUTTON' type='' aaname='Report' check:innerText='Report' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADQAAAAcCAYAAAAuh5ywAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH4SURBVFhH7ZRLS8NAFIX904Nkk0UQuwhiFrrIQiSbdBExakEqiDRiwW4qEiRgBStURDBQggRKkOOdR22rVWuxNdQcCMnceeR+cx9LWDAVQHlXAZR3FUB5VwGUd/0/oKjMwNjQoxmwdkIkL2rBPPQUwGQuIjX8SpMBlQdHZUkLlTWG0tGjssxBswTiimvmwNYN4a1rKnoWKjeptF+5YKYL3zHk3LIB9yKRc6T0LoCzQnY+p9O+SO0Tzm/BP6B/MBOVff5W6+hxr+SyzzRFhEK4OoN9Ts69tOHTt3XyiIzm0msfJeag2aMBB+IO3UpH09CFzjZQ79Kg24DNdLiXidx3W4VFa4MnGgggOvOwhThJkfHU/vUIDd0QI0fsWhvCzcgDM6roiJVcMQJKR3GLHGgtIEtfGZrb8iLiUwtsuylg+mrtajAO6STlfDhcozNLORERjRxWrogovAem2z0ljA9A8iyzFo+mrNKbbZzzMwMiJef2wFEeIfMYY9vDFBHS9trzB+rXjXNB7vQieDql4FlH5nqvg3rZR/hM3yJ6FqojNWSjMaaGsvtjqqESqg80+BRoCw3VN77Sz4FIIkqrVDscYrjLUSdz+vXFgUa6nAkvnLTLvY9GjPqm/If3TZi+BZpaY2poHiqAJtbCAf2RCqC8qwDKuxYMCHgFDXbuh1gpVFIAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
                                       </scg:List>
                                     </uix:TargetAnchorable.Anchors>
                                   </uix:TargetAnchorable>
@@ -226,7 +226,7 @@
                                   <InArgument x:TypeArguments="x:Object">[ShopeePromotionPrice]</InArgument>
                                 </Assign.Value>
                               </Assign>
-                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,143" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(&quot;Brand&quot;).ToString + CurrentRow(&quot;Model&quot;).ToString + &quot; Shopee end try loop&quot; + &quot;Price: &quot; + ShopeePromotionPrice.ToString]" />
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(&quot;Brand&quot;).ToString + CurrentRow(&quot;Model&quot;).ToString + &quot; Shopee end try loop&quot; + &quot;Price: &quot; + ShopeePromotionPrice.ToString]" />
                             </Sequence>
                           </TryCatch.Try>
                           <TryCatch.Catches>
@@ -278,13 +278,13 @@
                       </Sequence>
                     </If.Then>
                     <If.Else>
-                      <Sequence sap:VirtualizedContainerService.HintSize="576,2354" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                      <Sequence sap:VirtualizedContainerService.HintSize="530,974" sap2010:WorkflowViewState.IdRef="Sequence_12">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="534,52" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(&quot;Brand&quot;).ToString + CurrentRow(&quot;Model&quot;).ToString + &quot; in Lazada else loop&quot;]">
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="488,52" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(&quot;Brand&quot;).ToString + CurrentRow(&quot;Model&quot;).ToString + &quot; in Lazada else loop&quot;]">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -292,7 +292,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:LogMessage>
-                        <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="534,2174" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+                        <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="488,794" sap2010:WorkflowViewState.IdRef="TryCatch_3">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -300,17 +300,18 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                           <TryCatch.Try>
-                            <Sequence sap:VirtualizedContainerService.HintSize="496,1457" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                            <Sequence sap:VirtualizedContainerService.HintSize="496,1453" sap2010:WorkflowViewState.IdRef="Sequence_9">
                               <Sequence.Variables>
                                 <Variable x:TypeArguments="x:String" Name="ShopeePromotionPrice" />
                                 <Variable x:TypeArguments="x:String" Name="LazadaPromotionPrice" />
                               </Sequence.Variables>
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,143" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(&quot;Brand&quot;).ToString + CurrentRow(&quot;Model&quot;).ToString + &quot; Start Lazada try loop&quot;]" />
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(&quot;Brand&quot;).ToString + CurrentRow(&quot;Model&quot;).ToString + &quot; Start Lazada try loop&quot;]" />
                               <uix:NSetText DisplayName="Set Text 'shopee.sg/Sony-Singapor…'" sap:VirtualizedContainerService.HintSize="434,162" sap2010:WorkflowViewState.IdRef="NSetText_2" ScopeIdentifier="fd87e0d2-bd3f-4a06-8dd3-ecd7620dbdee" Text="[CurrentRow(&quot;URL (Lazada)&quot;).ToString]" Version="V3">
                                 <uix:NSetText.Target>
                                   <uix:TargetAnchorable DesignTimeRectangle="201, 59, 1313, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'shopee.sg/Sony-Singapor…'" FullSelectorArgument="&lt;ctrl name='Sony Singapore 65&amp;quot;X85L | 4K Full Array LED TV | BRAVIA | 65X85L *' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Sony Singapore 65&amp;quot;X85L | 4K Full Array LED TV | BRAVIA | 65X85L *' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' automationid='' /&gt;" Guid="dcf8e9c3-1064-42bf-86db-d5ae3eefbd0e" InformativeScreenshot="dda0223cd0d907425a74b8b3fce329e9.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Sony Singapore 65&amp;quot;X85L | 4K Full Array LED TV | BRAVIA | 65X85L *' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
@@ -329,12 +330,12 @@
                                 </uix:NKeyboardShortcuts.Target>
                               </uix:NKeyboardShortcuts>
                               <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="Delay_4" />
-                              <uix:NGetText DisplayName="Get Text 'Free Shipping'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="fd87e0d2-bd3f-4a06-8dd3-ecd7620dbdee" TextString="[LazadaPromotionPrice]" Version="V3">
+                              <uix:NGetText DisplayName="Get Text 'Brand'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="fd87e0d2-bd3f-4a06-8dd3-ecd7620dbdee" TextString="[LazadaPromotionPrice]" Version="V3">
                                 <uix:NGetText.Target>
-                                  <uix:TargetAnchorable BrowserURL="https://www.lazada.sg/products/lg-gt-t5107bm-506l-top-freezer-black-mirror-inverter-linear-compressor-hygiene-fresh-door-cooling-i2239749889-s12885501996.html" DesignTimeRectangle="725, 614, 132, 37" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'$1,650.00'" FullSelectorArgument="&lt;webctrl parentid='module_product_price_1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='module_product_price_1' tag='SPAN' type='' class='notranslate pdp-price pdp-price_type_normal pdp-price_color_orange pdp-price_size_xl' /&gt;" Guid="7c2de0d9-43a7-494a-937e-2b5e45426986" InformativeScreenshot="99c3bc604fef3ab1ca13671e04672ae3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='nameStorage:?wm_referrer=https%3A%2F%2Fwww.lazada.sg%2Fproducts%2Flg-gl-131sqw-90l-1-door-built-in-freezer-mini-bar-refrigerator-white-bioshield-pocket-handle-integrated-egg-tray-i670716768-s2044634259.html&amp;amp;refer_pv_id=623c6070Vt4v4m' title='LG Top Freezer GT-T5107BM 506L | Smart Inverter Compressor™ | Black Mirror | Lazada Singapore' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable BrowserURL="https://www.lazada.sg/products/samsung-rt25faradsass-top-mount-freezer-refrigerator-255l-2-ticks-i1738644224-s8691919196.html" DesignTimeRectangle="725, 538, 109, 37" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'$625.00'" FullSelectorArgument="&lt;webctrl parentid='module_product_price_1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='module_product_price_1' tag='SPAN' type='' class='notranslate pdp-price pdp-price_type_normal pdp-price_color_orange pdp-price_size_xl' /&gt;" Guid="0c16585e-5591-4e1b-858d-3bfe12e349ef" InformativeScreenshot="ea4c2d032cf1cf1131c4b197803aef45.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='nameStorage:?wm_referrer=https%3A%2F%2Fwww.lazada.sg%2Fproducts%2Fsamsung-rr39m71357fss-1-door-refrigerator-385l-4-ticks-i1738628331-s8691819257.html&amp;amp;refer_pv_id=3a606c90Rnesk5' title='Samsung RT25FARADSA/SS, Top Mount Freezer Refrigerator, 255L, 2 Ticks | Lazada Singapore' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
                                     <uix:TargetAnchorable.Anchors>
                                       <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                                        <uix:Target DesignTimeRectangle="1132, 488, 73, 20" ElementType="Text" FriendlyName="'Free Shipping'" FullSelectorArgument="&lt;webctrl class='pdp-product-brand__tail-label' parentid='module_product_brand_1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='pdp-product-brand__tail-label' parentid='module_product_brand_1' tag='SPAN' type='' aaname='Free Shipping' check:innerText='Free Shipping' /&gt;" SearchSteps="FuzzySelector" />
+                                        <uix:Target DesignTimeRectangle="725, 488, 34, 20" ElementType="Text" FriendlyName="'Brand'" FullSelectorArgument="&lt;webctrl parentid='module_product_brand_1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='module_product_brand_1' tag='SPAN' type='' class='pdp-product-brand__name' aaname='Brand: ' check:innerText='Brand:' /&gt;" SearchSteps="FuzzySelector" />
                                       </scg:List>
                                     </uix:TargetAnchorable.Anchors>
                                   </uix:TargetAnchorable>
@@ -348,11 +349,11 @@
                                   <InArgument x:TypeArguments="x:Object">[LazadaPromotionPrice]</InArgument>
                                 </Assign.Value>
                               </Assign>
-                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,143" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(&quot;Brand&quot;).ToString + CurrentRow(&quot;Model&quot;).ToString + &quot; end of Lazada try loop&quot; + &quot;Price: &quot; + LazadaPromotionPrice.ToString]" />
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(&quot;Brand&quot;).ToString + CurrentRow(&quot;Model&quot;).ToString + &quot; end of Lazada try loop&quot; + &quot;Price: &quot; + LazadaPromotionPrice.ToString]" />
                             </Sequence>
                           </TryCatch.Try>
                           <TryCatch.Catches>
-                            <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="500,212" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                            <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="454,210" sap2010:WorkflowViewState.IdRef="Catch`1_2">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -363,18 +364,18 @@
                                 <ActivityAction.Argument>
                                   <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                                 </ActivityAction.Argument>
-                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,143" sap2010:WorkflowViewState.IdRef="LogMessage_12" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(&quot;Brand&quot;).ToString + CurrentRow(&quot;Model&quot;).ToString + &quot; in Lazada catch loop&quot;]" />
+                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,141" sap2010:WorkflowViewState.IdRef="LogMessage_12" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(&quot;Brand&quot;).ToString + CurrentRow(&quot;Model&quot;).ToString + &quot; in Lazada catch loop&quot;]" />
                               </ActivityAction>
                             </Catch>
                           </TryCatch.Catches>
                           <TryCatch.Finally>
-                            <Sequence sap:VirtualizedContainerService.HintSize="450,254" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                            <Sequence sap:VirtualizedContainerService.HintSize="450,252" sap2010:WorkflowViewState.IdRef="Sequence_11">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="LogMessage_13" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(&quot;Brand&quot;).ToString + CurrentRow(&quot;Model&quot;).ToString + &quot; In Lazada Finally loop&quot;]" />
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,141" sap2010:WorkflowViewState.IdRef="LogMessage_13" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(&quot;Brand&quot;).ToString + CurrentRow(&quot;Model&quot;).ToString + &quot; In Lazada Finally loop&quot;]" />
                             </Sequence>
                           </TryCatch.Finally>
                         </TryCatch>
@@ -404,19 +405,19 @@
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_Fridge]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="686,3065" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
+          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_Fridge]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="334,552" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
             <ui:ForEachRow.Body>
               <ActivityAction x:TypeArguments="sd:DataRow">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="652,2879" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="300,366" sap2010:WorkflowViewState.IdRef="Sequence_21">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:LogMessage sap2010:Annotation.AnnotationText="To log to show that Brand/Model starting" DisplayName="Log Message " sap:VirtualizedContainerService.HintSize="610,94" sap2010:WorkflowViewState.IdRef="LogMessage_14" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(&quot;Brand&quot;).ToString + CurrentRow(&quot;Model&quot;).ToString + &quot; Start if else then loop&quot;]">
+                  <ui:LogMessage sap2010:Annotation.AnnotationText="To log to show that Brand/Model starting" DisplayName="Log Message " sap:VirtualizedContainerService.HintSize="258,94" sap2010:WorkflowViewState.IdRef="LogMessage_14" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(&quot;Brand&quot;).ToString + CurrentRow(&quot;Model&quot;).ToString + &quot; Start if else then loop&quot;]">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -425,11 +426,11 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:LogMessage>
-                  <If Condition="[String.IsNullOrEmpty(CurrentRow(&quot;URL (Shopee)&quot;).ToString.Trim)]" DisplayName="If - Shopee" sap:VirtualizedContainerService.HintSize="610,2565" sap2010:WorkflowViewState.IdRef="If_3">
+                  <If Condition="[String.IsNullOrEmpty(CurrentRow(&quot;URL (Shopee)&quot;).ToString.Trim)]" DisplayName="If - Shopee" sap:VirtualizedContainerService.HintSize="258,52" sap2010:WorkflowViewState.IdRef="If_3">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                     <If.Then>
@@ -443,14 +444,14 @@
                       </Sequence>
                     </If.Then>
                     <If.Else>
-                      <Sequence sap:VirtualizedContainerService.HintSize="576,2270" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                      <Sequence sap:VirtualizedContainerService.HintSize="576,2272" sap2010:WorkflowViewState.IdRef="Sequence_17">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                         <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="534,143" sap2010:WorkflowViewState.IdRef="LogMessage_16" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(&quot;Brand&quot;).ToString + CurrentRow(&quot;Model&quot;).ToString + &quot; in Shopee else loop&quot;]" />
-                        <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="534,1999" sap2010:WorkflowViewState.IdRef="TryCatch_4">
+                        <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="534,2001" sap2010:WorkflowViewState.IdRef="TryCatch_4">
                           <TryCatch.Try>
                             <Sequence sap:VirtualizedContainerService.HintSize="496,1457" sap2010:WorkflowViewState.IdRef="Sequence_13">
                               <Sequence.Variables>
@@ -497,7 +498,7 @@
                             </Sequence>
                           </TryCatch.Try>
                           <TryCatch.Catches>
-                            <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="500,210" sap2010:WorkflowViewState.IdRef="Catch`1_3">
+                            <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="500,212" sap2010:WorkflowViewState.IdRef="Catch`1_3">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -508,7 +509,7 @@
                                 <ActivityAction.Argument>
                                   <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                                 </ActivityAction.Argument>
-                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,141" sap2010:WorkflowViewState.IdRef="LogMessage_19" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(&quot;Brand&quot;).ToString + CurrentRow(&quot;Model&quot;).ToString + &quot; in Shopee catch loop&quot;]" />
+                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,143" sap2010:WorkflowViewState.IdRef="LogMessage_19" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(&quot;Brand&quot;).ToString + CurrentRow(&quot;Model&quot;).ToString + &quot; in Shopee catch loop&quot;]" />
                               </ActivityAction>
                             </Catch>
                           </TryCatch.Catches>
@@ -527,7 +528,7 @@
                       </Sequence>
                     </If.Else>
                   </If>
-                  <If Condition="[String.IsNullOrEmpty(CurrentRow(&quot;URL (Lazada)&quot;).ToString.Trim)]" DisplayName="If - Lazada" sap:VirtualizedContainerService.HintSize="610,52" sap2010:WorkflowViewState.IdRef="If_4">
+                  <If Condition="[String.IsNullOrEmpty(CurrentRow(&quot;URL (Lazada)&quot;).ToString.Trim)]" DisplayName="If - Lazada" sap:VirtualizedContainerService.HintSize="258,52" sap2010:WorkflowViewState.IdRef="If_4">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -545,13 +546,13 @@
                       </Sequence>
                     </If.Then>
                     <If.Else>
-                      <Sequence sap:VirtualizedContainerService.HintSize="300,232" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                      <Sequence sap:VirtualizedContainerService.HintSize="530,974" sap2010:WorkflowViewState.IdRef="Sequence_20">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="258,52" sap2010:WorkflowViewState.IdRef="LogMessage_15" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(&quot;Brand&quot;).ToString + CurrentRow(&quot;Model&quot;).ToString + &quot; in Lazada else loop&quot;]">
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="488,52" sap2010:WorkflowViewState.IdRef="LogMessage_15" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(&quot;Brand&quot;).ToString + CurrentRow(&quot;Model&quot;).ToString + &quot; in Lazada else loop&quot;]">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -559,7 +560,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:LogMessage>
-                        <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="258,52" sap2010:WorkflowViewState.IdRef="TryCatch_5">
+                        <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="488,794" sap2010:WorkflowViewState.IdRef="TryCatch_5">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -574,7 +575,8 @@
                               </Sequence.Variables>
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                               <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_20" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(&quot;Brand&quot;).ToString + CurrentRow(&quot;Model&quot;).ToString + &quot; Start Lazada try loop&quot;]" />
@@ -596,12 +598,12 @@
                                 </uix:NKeyboardShortcuts.Target>
                               </uix:NKeyboardShortcuts>
                               <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="Delay_8" />
-                              <uix:NGetText DisplayName="Get Text 'Free Shipping'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="fd87e0d2-bd3f-4a06-8dd3-ecd7620dbdee" TextString="[LazadaPromotionPrice]" Version="V3">
+                              <uix:NGetText DisplayName="Get Text 'Brand'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="fd87e0d2-bd3f-4a06-8dd3-ecd7620dbdee" TextString="[LazadaPromotionPrice]" Version="V3">
                                 <uix:NGetText.Target>
-                                  <uix:TargetAnchorable BrowserURL="https://www.lazada.sg/products/lg-gt-t5107bm-506l-top-freezer-black-mirror-inverter-linear-compressor-hygiene-fresh-door-cooling-i2239749889-s12885501996.html" DesignTimeRectangle="725, 614, 132, 37" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'$1,650.00'" FullSelectorArgument="&lt;webctrl parentid='module_product_price_1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='module_product_price_1' tag='SPAN' type='' class='notranslate pdp-price pdp-price_type_normal pdp-price_color_orange pdp-price_size_xl' /&gt;" Guid="2a211847-9054-40b7-bffd-971474f96b13" InformativeScreenshot="99c3bc604fef3ab1ca13671e04672ae3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='nameStorage:?wm_referrer=https%3A%2F%2Fwww.lazada.sg%2Fproducts%2Flg-gl-131sqw-90l-1-door-built-in-freezer-mini-bar-refrigerator-white-bioshield-pocket-handle-integrated-egg-tray-i670716768-s2044634259.html&amp;amp;refer_pv_id=623c6070Vt4v4m' title='LG Top Freezer GT-T5107BM 506L | Smart Inverter Compressor™ | Black Mirror | Lazada Singapore' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable BrowserURL="https://www.lazada.sg/products/toshiba-gr-rs780wi-pgx22-side-by-side-fridge-601l-i3116198125-s21195852519.html" DesignTimeRectangle="725, 538, 132, 37" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'$1,569.00'" FullSelectorArgument="&lt;webctrl parentid='module_product_price_1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='module_product_price_1' tag='SPAN' type='' class='notranslate pdp-price pdp-price_type_normal pdp-price_color_orange pdp-price_size_xl' /&gt;" Guid="5b2946c0-29a4-47f2-b750-cb6f7eadde4d" InformativeScreenshot="cb296fd0b45a25d5c4f11dfbf225a496.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='nameStorage:?wm_referrer=https%3A%2F%2Fwww.lazada.sg%2Fproducts%2Ftoshiba-gr-rf532we-pgx22-black-french-door-refrigerator-503l-energy-rating-2-ticks-i2138875772-s12161555853.html&amp;amp;refer_pv_id=24fc145bFJyvyG' title='Toshiba GR-RS780WI-PGX(22) Side by Side Fridge, 601L | Lazada Singapore' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
                                     <uix:TargetAnchorable.Anchors>
                                       <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                                        <uix:Target DesignTimeRectangle="1132, 488, 73, 20" ElementType="Text" FriendlyName="'Free Shipping'" FullSelectorArgument="&lt;webctrl class='pdp-product-brand__tail-label' parentid='module_product_brand_1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='pdp-product-brand__tail-label' parentid='module_product_brand_1' tag='SPAN' type='' aaname='Free Shipping' check:innerText='Free Shipping' /&gt;" SearchSteps="FuzzySelector" />
+                                        <uix:Target DesignTimeRectangle="725, 488, 34, 20" ElementType="Text" FriendlyName="'Brand'" FullSelectorArgument="&lt;webctrl parentid='module_product_brand_1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='module_product_brand_1' tag='SPAN' type='' class='pdp-product-brand__name' aaname='Brand: ' check:innerText='Brand:' /&gt;" SearchSteps="FuzzySelector" />
                                       </scg:List>
                                     </uix:TargetAnchorable.Anchors>
                                   </uix:TargetAnchorable>
@@ -619,7 +621,7 @@
                             </Sequence>
                           </TryCatch.Try>
                           <TryCatch.Catches>
-                            <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="500,210" sap2010:WorkflowViewState.IdRef="Catch`1_4">
+                            <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="454,210" sap2010:WorkflowViewState.IdRef="Catch`1_4">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
