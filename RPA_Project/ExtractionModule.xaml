@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="ExtractionModule" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="626,451" sap2010:WorkflowViewState.IdRef="ExtractionModule_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="ExtractionModule" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1794,2204" sap2010:WorkflowViewState.IdRef="ExtractionModule_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -26,6 +26,24 @@
       <x:String>GlobalVariablesNamespace</x:String>
       <x:String>GlobalConstantsNamespace</x:String>
       <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -57,23 +75,597 @@
       <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
       <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
       <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ExtractionModule" sap:VirtualizedContainerService.HintSize="450,377" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="ExtractionModule" sap:VirtualizedContainerService.HintSize="450,907" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_TV" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_Fridge" />
+    </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ExtractionModule.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="ExtractionModule.xaml">
-      <ui:InvokeWorkflowFile.Arguments>
-        <scg:Dictionary x:TypeArguments="x:String, Argument" />
-      </ui:InvokeWorkflowFile.Arguments>
-    </ui:InvokeWorkflowFile>
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="EmailModule.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="EmailModule.xaml">
-      <ui:InvokeWorkflowFile.Arguments>
-        <scg:Dictionary x:TypeArguments="x:String, Argument" />
-      </ui:InvokeWorkflowFile.Arguments>
-    </ui:InvokeWorkflowFile>
+    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dt_TV]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="388,88" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="TV" WorkbookPath="data/Comeptitor_Analysis_Template.xlsx" />
+    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dt_Fridge]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="388,88" sap2010:WorkflowViewState.IdRef="ReadRange_2" SheetName="Fridge" WorkbookPath="data/Comeptitor_Analysis_Template.xlsx" />
+    <uix:NApplicationCard sap2010:Annotation.AnnotationText="Extract TV Sheet&#xD;&#xA;" AttachMode="ByInstance" CloseMode="Never" DisplayName="TV Sheet Extraction" sap:VirtualizedContainerService.HintSize="388,94" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="fd87e0d2-bd3f-4a06-8dd3-ecd7620dbdee" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_TV]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="334,552" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+            <ui:ForEachRow.Body>
+              <ActivityAction x:TypeArguments="sd:DataRow">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="300,366" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage sap2010:Annotation.AnnotationText="To log to show that Brand/Model starting" DisplayName="Log Message " sap:VirtualizedContainerService.HintSize="258,94" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(&quot;Brand&quot;).ToString + CurrentRow(&quot;Model&quot;).ToString + &quot; Start if else then loop&quot;]">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:LogMessage>
+                  <If Condition="[String.IsNullOrEmpty(CurrentRow(&quot;URL (Shopee)&quot;).ToString.Trim)]" DisplayName="If - Shopee" sap:VirtualizedContainerService.HintSize="258,52" sap2010:WorkflowViewState.IdRef="If_1">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <If.Then>
+                      <Sequence sap:VirtualizedContainerService.HintSize="376,113" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:Continue sap:VirtualizedContainerService.HintSize="334,25" sap2010:WorkflowViewState.IdRef="Continue_1" />
+                      </Sequence>
+                    </If.Then>
+                    <If.Else>
+                      <Sequence sap:VirtualizedContainerService.HintSize="376,323" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,143" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(&quot;Brand&quot;).ToString + CurrentRow(&quot;Model&quot;).ToString + &quot; in Shopee else loop&quot;]" />
+                        <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="334,52" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <TryCatch.Try>
+                            <Sequence sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                              <Sequence.Variables>
+                                <Variable x:TypeArguments="x:String" Name="ShopeePromotionPrice" />
+                              </Sequence.Variables>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,143" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(&quot;Brand&quot;).ToString + CurrentRow(&quot;Model&quot;).ToString + &quot; Start Shopee try loop&quot;]" />
+                              <uix:NSetText DisplayName="Set Text 'shopee.sg/Sony-Singapor…'" sap:VirtualizedContainerService.HintSize="434,162" sap2010:WorkflowViewState.IdRef="NSetText_1" ScopeIdentifier="fd87e0d2-bd3f-4a06-8dd3-ecd7620dbdee" Text="[CurrentRow(&quot;URL (Shopee)&quot;).ToString]" Version="V3">
+                                <uix:NSetText.Target>
+                                  <uix:TargetAnchorable DesignTimeRectangle="201, 51, 227, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'shopee.sg/Sony-Singapor…'" FullSelectorArgument="&lt;ctrl name='Sony Singapore 65&amp;quot;X85L | 4K Full Array LED TV | BRAVIA | 65X85L *' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Sony Singapore 65&amp;quot;X85L | 4K Full Array LED TV | BRAVIA | 65X85L *' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' automationid='' /&gt;" Guid="bb72e938-6a87-45a0-a983-26ed860907ad" InformativeScreenshot="5b6757ca567e2a10a432f63e0f42605a.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Sony Singapore 65&amp;quot;X85L | 4K Full Array LED TV | BRAVIA | 65X85L *' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+                                </uix:NSetText.Target>
+                              </uix:NSetText>
+                              <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                              <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts 'https://shopee.sg/Sony-…'" sap:VirtualizedContainerService.HintSize="434,199" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" ScopeIdentifier="fd87e0d2-bd3f-4a06-8dd3-ecd7620dbdee" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V3">
+                                <uix:NKeyboardShortcuts.Target>
+                                  <uix:TargetAnchorable DesignTimeRectangle="201, 51, 131, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'https://shopee.sg/Sony-…'" FullSelectorArgument="&lt;ctrl name='Google - Google Chrome - Kenny' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Google - Google Chrome - Kenny' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' automationid='' /&gt;" Guid="e08c8a8f-18c8-4840-a9a9-de6f1c53d054" InformativeScreenshot="0ffbbbdac97b53055dd213e46abed956.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Google - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+                                </uix:NKeyboardShortcuts.Target>
+                              </uix:NKeyboardShortcuts>
+                              <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="Delay_2" />
+                              <uix:NGetText DisplayName="Get Text '$6,899.00'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="fd87e0d2-bd3f-4a06-8dd3-ecd7620dbdee" TextString="[ShopeePromotionPrice]" Version="V3">
+                                <uix:NGetText.Target>
+                                  <uix:TargetAnchorable BrowserURL="https://shopee.sg/Hisense-UX-65-75-85-inch-ULED-X-4K-Mini-LED-Smart-TV-Hi-View-Engine-X-Dynamic-X-Display-144Hz-i.582332390.13668508028" DesignTimeRectangle="889, 403, 121, 32" DesignTimeScaleFactor="0.8999999761581421" ElementType="Text" FriendlyName="'$6,899.00'" FullSelectorArgument="&lt;webctrl aaname='$6,899.00' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='DIV' type='' class='IZPeQz B67UQ0' /&gt;" Guid="405965e2-4952-497c-812a-d8f2a88081a8" InformativeScreenshot="b1c4829920c2d2f0651eac1d2e5b0f39.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='nameStorage:?wm_referrer=https%3A%2F%2Fwww.lazada.sg%2Fproducts%2Fhisense-l9h-100120-inch-4k-ultra-short-throw-laser-cinema-tv-alr-screen-3000-lumens-bt2020-107-i-memc-ultra-motion-hdr-10-dolby-atmos-ultra-short-throw-ust-laser-projector-ambient-light-reje*' title='Hisense UX 65/75/85 inch ULED X 4K Mini LED Smart TV | Hi View Engine X | Dynamic X Display | 144Hz | Shopee Singapore' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                        <uix:Target DesignTimeRectangle="1421, 356, 48, 24" ElementType="Button" FriendlyName="'Report'" FullSelectorArgument="&lt;webctrl class='YysGiT' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl class='YysGiT' tag='BUTTON' type='' aaname='Report' check:innerText='Report' /&gt;" SearchSteps="FuzzySelector" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NGetText.Target>
+                              </uix:NGetText>
+                              <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_1">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:Object">[CurrentRow("Promotional Price (SGD) (Shopee)")]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:Object">[ShopeePromotionPrice]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,143" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(&quot;Brand&quot;).ToString + CurrentRow(&quot;Model&quot;).ToString + &quot; Shopee end try loop&quot; + &quot;Price: &quot; + ShopeePromotionPrice.ToString]" />
+                            </Sequence>
+                          </TryCatch.Try>
+                          <TryCatch.Catches>
+                            <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="454,212" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ActivityAction x:TypeArguments="s:Exception">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                </ActivityAction.Argument>
+                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,143" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(&quot;Brand&quot;).ToString + CurrentRow(&quot;Model&quot;).ToString + &quot; in Shopee catch loop&quot;]" />
+                              </ActivityAction>
+                            </Catch>
+                          </TryCatch.Catches>
+                          <TryCatch.Finally>
+                            <Sequence sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(&quot;Brand&quot;).ToString + CurrentRow(&quot;Model&quot;).ToString + &quot; In Shopee Finally loop&quot;]" />
+                            </Sequence>
+                          </TryCatch.Finally>
+                        </TryCatch>
+                      </Sequence>
+                    </If.Else>
+                  </If>
+                  <If Condition="[String.IsNullOrEmpty(CurrentRow(&quot;URL (Lazada)&quot;).ToString.Trim)]" DisplayName="If - Lazada" sap:VirtualizedContainerService.HintSize="258,52" sap2010:WorkflowViewState.IdRef="If_2">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <If.Then>
+                      <Sequence sap:VirtualizedContainerService.HintSize="376,113" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:Continue sap:VirtualizedContainerService.HintSize="334,25" sap2010:WorkflowViewState.IdRef="Continue_2" />
+                      </Sequence>
+                    </If.Then>
+                    <If.Else>
+                      <Sequence sap:VirtualizedContainerService.HintSize="576,2354" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="534,52" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(&quot;Brand&quot;).ToString + CurrentRow(&quot;Model&quot;).ToString + &quot; in Lazada else loop&quot;]">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:LogMessage>
+                        <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="534,2174" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <TryCatch.Try>
+                            <Sequence sap:VirtualizedContainerService.HintSize="496,1457" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                              <Sequence.Variables>
+                                <Variable x:TypeArguments="x:String" Name="ShopeePromotionPrice" />
+                                <Variable x:TypeArguments="x:String" Name="LazadaPromotionPrice" />
+                              </Sequence.Variables>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,143" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(&quot;Brand&quot;).ToString + CurrentRow(&quot;Model&quot;).ToString + &quot; Start Lazada try loop&quot;]" />
+                              <uix:NSetText DisplayName="Set Text 'shopee.sg/Sony-Singapor…'" sap:VirtualizedContainerService.HintSize="434,162" sap2010:WorkflowViewState.IdRef="NSetText_2" ScopeIdentifier="fd87e0d2-bd3f-4a06-8dd3-ecd7620dbdee" Text="[CurrentRow(&quot;URL (Lazada)&quot;).ToString]" Version="V3">
+                                <uix:NSetText.Target>
+                                  <uix:TargetAnchorable DesignTimeRectangle="201, 59, 1313, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'shopee.sg/Sony-Singapor…'" FullSelectorArgument="&lt;ctrl name='Sony Singapore 65&amp;quot;X85L | 4K Full Array LED TV | BRAVIA | 65X85L *' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Sony Singapore 65&amp;quot;X85L | 4K Full Array LED TV | BRAVIA | 65X85L *' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' automationid='' /&gt;" Guid="dcf8e9c3-1064-42bf-86db-d5ae3eefbd0e" InformativeScreenshot="dda0223cd0d907425a74b8b3fce329e9.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Sony Singapore 65&amp;quot;X85L | 4K Full Array LED TV | BRAVIA | 65X85L *' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                        <uix:Target DesignTimeRectangle="36, 8, 256, 41" ElementType="TabPage" FriendlyName="'Close'" FullSelectorArgument="&lt;ctrl name='Sony Singapore 65&amp;quot;X85L | 4K Full Array LED TV | BRAVIA | 65X85L *' role='pane' /&gt;&lt;ctrl name='Sony Singapore 65&amp;quot;X85L | 4K Full Array LED TV | BRAVIA | 65X85L *' role='page tab' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Sony Singapore 65&amp;quot;X85L | 4K Full Array LED TV | BRAVIA | 65X85L *' role='pane' /&gt;&lt;ctrl name='Sony Singapore 65&amp;quot;X85L | 4K Full Array LED TV | BRAVIA | 65X85L *' role='page tab' automationid='' check:fulltext='Close' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NSetText.Target>
+                              </uix:NSetText>
+                              <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="Delay_3" />
+                              <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts 'https://shopee.sg/Sony-…'" sap:VirtualizedContainerService.HintSize="434,199" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_3" ScopeIdentifier="fd87e0d2-bd3f-4a06-8dd3-ecd7620dbdee" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V3">
+                                <uix:NKeyboardShortcuts.Target>
+                                  <uix:TargetAnchorable DesignTimeRectangle="201, 51, 131, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'https://shopee.sg/Sony-…'" FullSelectorArgument="&lt;ctrl name='Google - Google Chrome - Kenny' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Google - Google Chrome - Kenny' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' automationid='' /&gt;" Guid="e08c8a8f-18c8-4840-a9a9-de6f1c53d054" InformativeScreenshot="0ffbbbdac97b53055dd213e46abed956.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Google - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+                                </uix:NKeyboardShortcuts.Target>
+                              </uix:NKeyboardShortcuts>
+                              <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="Delay_4" />
+                              <uix:NGetText DisplayName="Get Text 'Free Shipping'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="fd87e0d2-bd3f-4a06-8dd3-ecd7620dbdee" TextString="[LazadaPromotionPrice]" Version="V3">
+                                <uix:NGetText.Target>
+                                  <uix:TargetAnchorable BrowserURL="https://www.lazada.sg/products/lg-gt-t5107bm-506l-top-freezer-black-mirror-inverter-linear-compressor-hygiene-fresh-door-cooling-i2239749889-s12885501996.html" DesignTimeRectangle="725, 614, 132, 37" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'$1,650.00'" FullSelectorArgument="&lt;webctrl parentid='module_product_price_1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='module_product_price_1' tag='SPAN' type='' class='notranslate pdp-price pdp-price_type_normal pdp-price_color_orange pdp-price_size_xl' /&gt;" Guid="7c2de0d9-43a7-494a-937e-2b5e45426986" InformativeScreenshot="99c3bc604fef3ab1ca13671e04672ae3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='nameStorage:?wm_referrer=https%3A%2F%2Fwww.lazada.sg%2Fproducts%2Flg-gl-131sqw-90l-1-door-built-in-freezer-mini-bar-refrigerator-white-bioshield-pocket-handle-integrated-egg-tray-i670716768-s2044634259.html&amp;amp;refer_pv_id=623c6070Vt4v4m' title='LG Top Freezer GT-T5107BM 506L | Smart Inverter Compressor™ | Black Mirror | Lazada Singapore' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                        <uix:Target DesignTimeRectangle="1132, 488, 73, 20" ElementType="Text" FriendlyName="'Free Shipping'" FullSelectorArgument="&lt;webctrl class='pdp-product-brand__tail-label' parentid='module_product_brand_1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='pdp-product-brand__tail-label' parentid='module_product_brand_1' tag='SPAN' type='' aaname='Free Shipping' check:innerText='Free Shipping' /&gt;" SearchSteps="FuzzySelector" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NGetText.Target>
+                              </uix:NGetText>
+                              <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_2">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:Object">[CurrentRow("Promotional Price (Lazada)")]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:Object">[LazadaPromotionPrice]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,143" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(&quot;Brand&quot;).ToString + CurrentRow(&quot;Model&quot;).ToString + &quot; end of Lazada try loop&quot; + &quot;Price: &quot; + LazadaPromotionPrice.ToString]" />
+                            </Sequence>
+                          </TryCatch.Try>
+                          <TryCatch.Catches>
+                            <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="500,212" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ActivityAction x:TypeArguments="s:Exception">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                </ActivityAction.Argument>
+                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,143" sap2010:WorkflowViewState.IdRef="LogMessage_12" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(&quot;Brand&quot;).ToString + CurrentRow(&quot;Model&quot;).ToString + &quot; in Lazada catch loop&quot;]" />
+                              </ActivityAction>
+                            </Catch>
+                          </TryCatch.Catches>
+                          <TryCatch.Finally>
+                            <Sequence sap:VirtualizedContainerService.HintSize="450,254" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="LogMessage_13" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(&quot;Brand&quot;).ToString + CurrentRow(&quot;Model&quot;).ToString + &quot; In Lazada Finally loop&quot;]" />
+                            </Sequence>
+                          </TryCatch.Finally>
+                        </TryCatch>
+                      </Sequence>
+                    </If.Else>
+                  </If>
+                </Sequence>
+              </ActivityAction>
+            </ui:ForEachRow.Body>
+          </ui:ForEachRow>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-7, 0, 814, 859" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="135ab968734847feaa35cd9039f7cb78.png" Selector="&lt;html app='chrome.exe' url='https://www.google.com/' /&gt;" Title="New Tab" Url="https://www.google.com/" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard sap2010:Annotation.AnnotationText="Extract Fridge Sheet&#xA;" AttachMode="ByInstance" CloseMode="Never" DisplayName="Fridge Sheet Extraction" sap:VirtualizedContainerService.HintSize="388,94" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="fd87e0d2-bd3f-4a06-8dd3-ecd7620dbdee" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_Fridge]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="686,3065" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
+            <ui:ForEachRow.Body>
+              <ActivityAction x:TypeArguments="sd:DataRow">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="652,2879" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage sap2010:Annotation.AnnotationText="To log to show that Brand/Model starting" DisplayName="Log Message " sap:VirtualizedContainerService.HintSize="610,94" sap2010:WorkflowViewState.IdRef="LogMessage_14" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(&quot;Brand&quot;).ToString + CurrentRow(&quot;Model&quot;).ToString + &quot; Start if else then loop&quot;]">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:LogMessage>
+                  <If Condition="[String.IsNullOrEmpty(CurrentRow(&quot;URL (Shopee)&quot;).ToString.Trim)]" DisplayName="If - Shopee" sap:VirtualizedContainerService.HintSize="610,2565" sap2010:WorkflowViewState.IdRef="If_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <If.Then>
+                      <Sequence sap:VirtualizedContainerService.HintSize="376,113" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:Continue sap:VirtualizedContainerService.HintSize="334,25" sap2010:WorkflowViewState.IdRef="Continue_4" />
+                      </Sequence>
+                    </If.Then>
+                    <If.Else>
+                      <Sequence sap:VirtualizedContainerService.HintSize="576,2270" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="534,143" sap2010:WorkflowViewState.IdRef="LogMessage_16" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(&quot;Brand&quot;).ToString + CurrentRow(&quot;Model&quot;).ToString + &quot; in Shopee else loop&quot;]" />
+                        <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="534,1999" sap2010:WorkflowViewState.IdRef="TryCatch_4">
+                          <TryCatch.Try>
+                            <Sequence sap:VirtualizedContainerService.HintSize="496,1457" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                              <Sequence.Variables>
+                                <Variable x:TypeArguments="x:String" Name="ShopeePromotionPrice" />
+                              </Sequence.Variables>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,143" sap2010:WorkflowViewState.IdRef="LogMessage_17" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(&quot;Brand&quot;).ToString + CurrentRow(&quot;Model&quot;).ToString + &quot; Start Shopee try loop&quot;]" />
+                              <uix:NSetText DisplayName="Set Text 'shopee.sg/Sony-Singapor…'" sap:VirtualizedContainerService.HintSize="434,162" sap2010:WorkflowViewState.IdRef="NSetText_3" ScopeIdentifier="fd87e0d2-bd3f-4a06-8dd3-ecd7620dbdee" Text="[CurrentRow(&quot;URL (Shopee)&quot;).ToString]" Version="V3">
+                                <uix:NSetText.Target>
+                                  <uix:TargetAnchorable DesignTimeRectangle="201, 51, 227, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'shopee.sg/Sony-Singapor…'" FullSelectorArgument="&lt;ctrl name='Sony Singapore 65&amp;quot;X85L | 4K Full Array LED TV | BRAVIA | 65X85L *' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Sony Singapore 65&amp;quot;X85L | 4K Full Array LED TV | BRAVIA | 65X85L *' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' automationid='' /&gt;" Guid="bb72e938-6a87-45a0-a983-26ed860907ad" InformativeScreenshot="5b6757ca567e2a10a432f63e0f42605a.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Sony Singapore 65&amp;quot;X85L | 4K Full Array LED TV | BRAVIA | 65X85L *' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+                                </uix:NSetText.Target>
+                              </uix:NSetText>
+                              <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="Delay_5" />
+                              <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts 'https://shopee.sg/Sony-…'" sap:VirtualizedContainerService.HintSize="434,199" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_4" ScopeIdentifier="fd87e0d2-bd3f-4a06-8dd3-ecd7620dbdee" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V3">
+                                <uix:NKeyboardShortcuts.Target>
+                                  <uix:TargetAnchorable DesignTimeRectangle="201, 51, 131, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'https://shopee.sg/Sony-…'" FullSelectorArgument="&lt;ctrl name='Google - Google Chrome - Kenny' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Google - Google Chrome - Kenny' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' automationid='' /&gt;" Guid="e08c8a8f-18c8-4840-a9a9-de6f1c53d054" InformativeScreenshot="0ffbbbdac97b53055dd213e46abed956.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Google - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+                                </uix:NKeyboardShortcuts.Target>
+                              </uix:NKeyboardShortcuts>
+                              <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="Delay_6" />
+                              <uix:NGetText DisplayName="Get Text '$1,018.00'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="fd87e0d2-bd3f-4a06-8dd3-ecd7620dbdee" TextString="[ShopeePromotionPrice]" Version="V3">
+                                <uix:NGetText.Target>
+                                  <uix:TargetAnchorable BrowserURL="https://shopee.sg/Panasonic-405L-NR-BX471CPSS-Premium-Bottom-Freezer-2-Doors-Refrigerator-with-PrimeFresh--i.165734283.8146144127" DesignTimeRectangle="889, 434, 121, 32" DesignTimeScaleFactor="0.8999999761581421" ElementType="Text" FriendlyName="'$1,018.00'" FullSelectorArgument="&lt;webctrl aaname='$1,018.00' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='DIV' type='' class='IZPeQz B67UQ0' /&gt;" Guid="e2dec50b-1cce-4d67-8692-7c304550cf8c" InformativeScreenshot="50819456bace3f03c789f9b7a7c7270d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='nameStorage:?wm_referrer=https%3A%2F%2Fwww.lazada.sg%2Fproducts%2Fhisense-l9h-100120-inch-4k-ultra-short-throw-laser-cinema-tv-alr-screen-3000-lumens-bt2020-107-i-memc-ultra-motion-hdr-10-dolby-atmos-ultra-short-throw-ust-laser-projector-ambient-light-reje*' title='Panasonic 405L NR-BX471CPSS Premium Bottom Freezer 2 Doors Refrigerator with PrimeFresh+ | Shopee Singapore' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                        <uix:Target DesignTimeRectangle="1421, 356, 48, 24" ElementType="Button" FriendlyName="'Report'" FullSelectorArgument="&lt;webctrl class='YysGiT' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl class='YysGiT' tag='BUTTON' type='' aaname='Report' check:innerText='Report' /&gt;" SearchSteps="FuzzySelector" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NGetText.Target>
+                              </uix:NGetText>
+                              <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_3">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:Object">[CurrentRow("Promotional Price (SGD) (Shopee)")]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:Object">[ShopeePromotionPrice]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,143" sap2010:WorkflowViewState.IdRef="LogMessage_18" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(&quot;Brand&quot;).ToString + CurrentRow(&quot;Model&quot;).ToString + &quot; Shopee end try loop&quot; + &quot;Price: &quot; + ShopeePromotionPrice.ToString]" />
+                            </Sequence>
+                          </TryCatch.Try>
+                          <TryCatch.Catches>
+                            <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="500,210" sap2010:WorkflowViewState.IdRef="Catch`1_3">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ActivityAction x:TypeArguments="s:Exception">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                </ActivityAction.Argument>
+                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,141" sap2010:WorkflowViewState.IdRef="LogMessage_19" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(&quot;Brand&quot;).ToString + CurrentRow(&quot;Model&quot;).ToString + &quot; in Shopee catch loop&quot;]" />
+                              </ActivityAction>
+                            </Catch>
+                          </TryCatch.Catches>
+                          <TryCatch.Finally>
+                            <Sequence sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="LogMessage_24" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(&quot;Brand&quot;).ToString + CurrentRow(&quot;Model&quot;).ToString + &quot; In Shopee Finally loop&quot;]" />
+                            </Sequence>
+                          </TryCatch.Finally>
+                        </TryCatch>
+                      </Sequence>
+                    </If.Else>
+                  </If>
+                  <If Condition="[String.IsNullOrEmpty(CurrentRow(&quot;URL (Lazada)&quot;).ToString.Trim)]" DisplayName="If - Lazada" sap:VirtualizedContainerService.HintSize="610,52" sap2010:WorkflowViewState.IdRef="If_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <If.Then>
+                      <Sequence sap:VirtualizedContainerService.HintSize="376,113" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:Continue sap:VirtualizedContainerService.HintSize="334,25" sap2010:WorkflowViewState.IdRef="Continue_3" />
+                      </Sequence>
+                    </If.Then>
+                    <If.Else>
+                      <Sequence sap:VirtualizedContainerService.HintSize="300,232" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="258,52" sap2010:WorkflowViewState.IdRef="LogMessage_15" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(&quot;Brand&quot;).ToString + CurrentRow(&quot;Model&quot;).ToString + &quot; in Lazada else loop&quot;]">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:LogMessage>
+                        <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="258,52" sap2010:WorkflowViewState.IdRef="TryCatch_5">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <TryCatch.Try>
+                            <Sequence sap:VirtualizedContainerService.HintSize="496,1453" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                              <Sequence.Variables>
+                                <Variable x:TypeArguments="x:String" Name="ShopeePromotionPrice" />
+                                <Variable x:TypeArguments="x:String" Name="LazadaPromotionPrice" />
+                              </Sequence.Variables>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_20" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(&quot;Brand&quot;).ToString + CurrentRow(&quot;Model&quot;).ToString + &quot; Start Lazada try loop&quot;]" />
+                              <uix:NSetText DisplayName="Set Text 'shopee.sg/Sony-Singapor…'" sap:VirtualizedContainerService.HintSize="434,162" sap2010:WorkflowViewState.IdRef="NSetText_4" ScopeIdentifier="fd87e0d2-bd3f-4a06-8dd3-ecd7620dbdee" Text="[CurrentRow(&quot;URL (Lazada)&quot;).ToString]" Version="V3">
+                                <uix:NSetText.Target>
+                                  <uix:TargetAnchorable DesignTimeRectangle="201, 59, 1313, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'shopee.sg/Sony-Singapor…'" FullSelectorArgument="&lt;ctrl name='Sony Singapore 65&amp;quot;X85L | 4K Full Array LED TV | BRAVIA | 65X85L *' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Sony Singapore 65&amp;quot;X85L | 4K Full Array LED TV | BRAVIA | 65X85L *' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' automationid='' /&gt;" Guid="dcf8e9c3-1064-42bf-86db-d5ae3eefbd0e" InformativeScreenshot="dda0223cd0d907425a74b8b3fce329e9.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Sony Singapore 65&amp;quot;X85L | 4K Full Array LED TV | BRAVIA | 65X85L *' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                        <uix:Target DesignTimeRectangle="36, 8, 256, 41" ElementType="TabPage" FriendlyName="'Close'" FullSelectorArgument="&lt;ctrl name='Sony Singapore 65&amp;quot;X85L | 4K Full Array LED TV | BRAVIA | 65X85L *' role='pane' /&gt;&lt;ctrl name='Sony Singapore 65&amp;quot;X85L | 4K Full Array LED TV | BRAVIA | 65X85L *' role='page tab' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Sony Singapore 65&amp;quot;X85L | 4K Full Array LED TV | BRAVIA | 65X85L *' role='pane' /&gt;&lt;ctrl name='Sony Singapore 65&amp;quot;X85L | 4K Full Array LED TV | BRAVIA | 65X85L *' role='page tab' automationid='' check:fulltext='Close' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NSetText.Target>
+                              </uix:NSetText>
+                              <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="Delay_7" />
+                              <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts 'https://shopee.sg/Sony-…'" sap:VirtualizedContainerService.HintSize="434,199" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_5" ScopeIdentifier="fd87e0d2-bd3f-4a06-8dd3-ecd7620dbdee" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V3">
+                                <uix:NKeyboardShortcuts.Target>
+                                  <uix:TargetAnchorable DesignTimeRectangle="201, 51, 131, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'https://shopee.sg/Sony-…'" FullSelectorArgument="&lt;ctrl name='Google - Google Chrome - Kenny' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Google - Google Chrome - Kenny' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' automationid='' /&gt;" Guid="e08c8a8f-18c8-4840-a9a9-de6f1c53d054" InformativeScreenshot="0ffbbbdac97b53055dd213e46abed956.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Google - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+                                </uix:NKeyboardShortcuts.Target>
+                              </uix:NKeyboardShortcuts>
+                              <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="Delay_8" />
+                              <uix:NGetText DisplayName="Get Text 'Free Shipping'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="fd87e0d2-bd3f-4a06-8dd3-ecd7620dbdee" TextString="[LazadaPromotionPrice]" Version="V3">
+                                <uix:NGetText.Target>
+                                  <uix:TargetAnchorable BrowserURL="https://www.lazada.sg/products/lg-gt-t5107bm-506l-top-freezer-black-mirror-inverter-linear-compressor-hygiene-fresh-door-cooling-i2239749889-s12885501996.html" DesignTimeRectangle="725, 614, 132, 37" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'$1,650.00'" FullSelectorArgument="&lt;webctrl parentid='module_product_price_1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='module_product_price_1' tag='SPAN' type='' class='notranslate pdp-price pdp-price_type_normal pdp-price_color_orange pdp-price_size_xl' /&gt;" Guid="2a211847-9054-40b7-bffd-971474f96b13" InformativeScreenshot="99c3bc604fef3ab1ca13671e04672ae3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='nameStorage:?wm_referrer=https%3A%2F%2Fwww.lazada.sg%2Fproducts%2Flg-gl-131sqw-90l-1-door-built-in-freezer-mini-bar-refrigerator-white-bioshield-pocket-handle-integrated-egg-tray-i670716768-s2044634259.html&amp;amp;refer_pv_id=623c6070Vt4v4m' title='LG Top Freezer GT-T5107BM 506L | Smart Inverter Compressor™ | Black Mirror | Lazada Singapore' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                        <uix:Target DesignTimeRectangle="1132, 488, 73, 20" ElementType="Text" FriendlyName="'Free Shipping'" FullSelectorArgument="&lt;webctrl class='pdp-product-brand__tail-label' parentid='module_product_brand_1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='pdp-product-brand__tail-label' parentid='module_product_brand_1' tag='SPAN' type='' aaname='Free Shipping' check:innerText='Free Shipping' /&gt;" SearchSteps="FuzzySelector" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NGetText.Target>
+                              </uix:NGetText>
+                              <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_4">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:Object">[CurrentRow("Promotional Price (SGD) (Lazada)")]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:Object">[LazadaPromotionPrice]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_21" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(&quot;Brand&quot;).ToString + CurrentRow(&quot;Model&quot;).ToString + &quot; end of Lazada try loop&quot; + &quot;Price: &quot; + LazadaPromotionPrice.ToString]" />
+                            </Sequence>
+                          </TryCatch.Try>
+                          <TryCatch.Catches>
+                            <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="500,210" sap2010:WorkflowViewState.IdRef="Catch`1_4">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ActivityAction x:TypeArguments="s:Exception">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                </ActivityAction.Argument>
+                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,141" sap2010:WorkflowViewState.IdRef="LogMessage_22" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(&quot;Brand&quot;).ToString + CurrentRow(&quot;Model&quot;).ToString + &quot; in Lazada catch loop&quot;]" />
+                              </ActivityAction>
+                            </Catch>
+                          </TryCatch.Catches>
+                          <TryCatch.Finally>
+                            <Sequence sap:VirtualizedContainerService.HintSize="450,252" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,141" sap2010:WorkflowViewState.IdRef="LogMessage_23" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(&quot;Brand&quot;).ToString + CurrentRow(&quot;Model&quot;).ToString + &quot; In Lazada Finally loop&quot;]" />
+                            </Sequence>
+                          </TryCatch.Finally>
+                        </TryCatch>
+                      </Sequence>
+                    </If.Else>
+                  </If>
+                </Sequence>
+              </ActivityAction>
+            </ui:ForEachRow.Body>
+          </ui:ForEachRow>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-7, 0, 814, 859" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="135ab968734847feaa35cd9039f7cb78.png" Selector="&lt;html app='chrome.exe' url='https://www.google.com/' /&gt;" Title="New Tab" Url="https://www.google.com/" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+    <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[dt_TV]" DisplayName="Write Range Workbook- TV" sap:VirtualizedContainerService.HintSize="388,116" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="TV_Updated" WorkbookPath="data/Comeptitor_Analysis_Template_V2.xlsx" />
+    <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[dt_Fridge]" DisplayName="Write Range Workbook - Fridge" sap:VirtualizedContainerService.HintSize="388,116" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="Fridge_Updated" WorkbookPath="data/Comeptitor_Analysis_Template_V2.xlsx" />
   </Sequence>
 </Activity>
