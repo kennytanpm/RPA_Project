@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="ExtractionModule" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1794,2204" sap2010:WorkflowViewState.IdRef="ExtractionModule_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="ExtractionModule" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="896,972" sap2010:WorkflowViewState.IdRef="ExtractionModule_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -44,6 +44,7 @@
       <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
       <x:String>UiPath.Platform.Triggers</x:String>
       <x:String>UiPath.Platform.Triggers.Scope</x:String>
+      <x:String>UiPath.Testing.Activities.TestData</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -124,7 +125,7 @@
     </sap:WorkflowViewStateService.ViewState>
     <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dt_TV]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="388,88" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="TV" WorkbookPath="data/Comeptitor_Analysis_Template.xlsx" />
     <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dt_Fridge]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="388,88" sap2010:WorkflowViewState.IdRef="ReadRange_2" SheetName="Fridge" WorkbookPath="data/Comeptitor_Analysis_Template.xlsx" />
-    <uix:NApplicationCard sap2010:Annotation.AnnotationText="Extract TV Sheet&#xD;&#xA;" AttachMode="ByInstance" CloseMode="Never" DisplayName="TV Sheet Extraction" sap:VirtualizedContainerService.HintSize="388,94" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="fd87e0d2-bd3f-4a06-8dd3-ecd7620dbdee" Version="V2">
+    <uix:NApplicationCard sap2010:Annotation.AnnotationText="Extract TV Sheet&#xA;" AttachMode="ByInstance" CloseMode="Never" DisplayName="TV Sheet Extraction" sap:VirtualizedContainerService.HintSize="434,811" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="fd87e0d2-bd3f-4a06-8dd3-ecd7620dbdee" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -151,7 +152,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:LogMessage>
-                  <If Condition="[String.IsNullOrEmpty(CurrentRow(&quot;URL (Shopee)&quot;).ToString.Trim)]" DisplayName="If - Shopee" sap:VirtualizedContainerService.HintSize="258,52" sap2010:WorkflowViewState.IdRef="If_1">
+                  <If Condition="[String.IsNullOrEmpty(CurrentRow(&quot;URL (Shopee)&quot;).ToString.Trim)]" DisplayName="If - Shopee" sap:VirtualizedContainerService.HintSize="564,1187" sap2010:WorkflowViewState.IdRef="If_1">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -169,14 +170,14 @@
                       </Sequence>
                     </If.Then>
                     <If.Else>
-                      <Sequence sap:VirtualizedContainerService.HintSize="530,896" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                      <Sequence sap:VirtualizedContainerService.HintSize="530,892" sap2010:WorkflowViewState.IdRef="Sequence_6">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="488,143" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(&quot;Brand&quot;).ToString + CurrentRow(&quot;Model&quot;).ToString + &quot; in Shopee else loop&quot;]" />
-                        <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="488,625" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="488,141" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(&quot;Brand&quot;).ToString + CurrentRow(&quot;Model&quot;).ToString + &quot; in Shopee else loop&quot;]" />
+                        <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="488,623" sap2010:WorkflowViewState.IdRef="TryCatch_2">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -184,9 +185,10 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                           <TryCatch.Try>
-                            <Sequence sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                            <Sequence sap:VirtualizedContainerService.HintSize="496,1453" sap2010:WorkflowViewState.IdRef="Sequence_7">
                               <Sequence.Variables>
                                 <Variable x:TypeArguments="x:String" Name="ShopeePromotionPrice" />
+                                <Variable x:TypeArguments="x:String" Name="RandonTime" />
                               </Sequence.Variables>
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -195,7 +197,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                               <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(&quot;Brand&quot;).ToString + CurrentRow(&quot;Model&quot;).ToString + &quot; Start Shopee try loop&quot;]" />
-                              <uix:NSetText DisplayName="Set Text 'shopee.sg/Sony-Singapor…'" sap:VirtualizedContainerService.HintSize="434,162" sap2010:WorkflowViewState.IdRef="NSetText_1" ScopeIdentifier="fd87e0d2-bd3f-4a06-8dd3-ecd7620dbdee" Text="[CurrentRow(&quot;URL (Shopee)&quot;).ToString]" Version="V3">
+                              <uix:NSetText DelayAfter="[(new Random().Next(0,1))]" DisplayName="Set Text 'shopee.sg/Sony-Singapor…'" sap:VirtualizedContainerService.HintSize="434,162" sap2010:WorkflowViewState.IdRef="NSetText_1" ScopeIdentifier="fd87e0d2-bd3f-4a06-8dd3-ecd7620dbdee" Text="[CurrentRow(&quot;URL (Shopee)&quot;).ToString]" Version="V3">
                                 <uix:NSetText.Target>
                                   <uix:TargetAnchorable DesignTimeRectangle="201, 51, 227, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'shopee.sg/Sony-Singapor…'" FullSelectorArgument="&lt;ctrl name='Sony Singapore 65&amp;quot;X85L | 4K Full Array LED TV | BRAVIA | 65X85L *' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Sony Singapore 65&amp;quot;X85L | 4K Full Array LED TV | BRAVIA | 65X85L *' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' automationid='' /&gt;" Guid="bb72e938-6a87-45a0-a983-26ed860907ad" InformativeScreenshot="5b6757ca567e2a10a432f63e0f42605a.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Sony Singapore 65&amp;quot;X85L | 4K Full Array LED TV | BRAVIA | 65X85L *' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
                                 </uix:NSetText.Target>
@@ -211,7 +213,7 @@
                                 <uix:NGetText.Target>
                                   <uix:TargetAnchorable BrowserURL="https://shopee.sg/Hisense-UX-65-75-85-inch-ULED-X-4K-Mini-LED-Smart-TV-Hi-View-Engine-X-Dynamic-X-Display-144Hz-i.582332390.13668508028" DesignTimeRectangle="889, 403, 121, 32" DesignTimeScaleFactor="0.8999999761581421" ElementType="Text" FriendlyName="'$6,899.00'" FullSelectorArgument="&lt;webctrl aaname='$6,899.00' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='DIV' type='' class='IZPeQz B67UQ0' /&gt;" Guid="405965e2-4952-497c-812a-d8f2a88081a8" InformativeScreenshot="258cceb33f3c4649a54c50704cf0a797.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='nameStorage:?wm_referrer=https%3A%2F%2Fwww.lazada.sg%2Fproducts%2Fhisense-l9h-100120-inch-4k-ultra-short-throw-laser-cinema-tv-alr-screen-3000-lumens-bt2020-107-i-memc-ultra-motion-hdr-10-dolby-atmos-ultra-short-throw-ust-laser-projector-ambient-light-reje*' title='Hisense UX 65/75/85 inch ULED X 4K Mini LED Smart TV | Hi View Engine X | Dynamic X Display | 144Hz | Shopee Singapore' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
                                     <uix:TargetAnchorable.Anchors>
-                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                         <uix:Target DesignTimeRectangle="1421, 356, 48, 24" ElementType="Button" FriendlyName="'Report'" FullSelectorArgument="&lt;webctrl class='YysGiT' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl class='YysGiT' tag='BUTTON' type='' aaname='Report' check:innerText='Report' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADQAAAAcCAYAAAAuh5ywAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH4SURBVFhH7ZRLS8NAFIX904Nkk0UQuwhiFrrIQiSbdBExakEqiDRiwW4qEiRgBStURDBQggRKkOOdR22rVWuxNdQcCMnceeR+cx9LWDAVQHlXAZR3FUB5VwGUd/0/oKjMwNjQoxmwdkIkL2rBPPQUwGQuIjX8SpMBlQdHZUkLlTWG0tGjssxBswTiimvmwNYN4a1rKnoWKjeptF+5YKYL3zHk3LIB9yKRc6T0LoCzQnY+p9O+SO0Tzm/BP6B/MBOVff5W6+hxr+SyzzRFhEK4OoN9Ts69tOHTt3XyiIzm0msfJeag2aMBB+IO3UpH09CFzjZQ79Kg24DNdLiXidx3W4VFa4MnGgggOvOwhThJkfHU/vUIDd0QI0fsWhvCzcgDM6roiJVcMQJKR3GLHGgtIEtfGZrb8iLiUwtsuylg+mrtajAO6STlfDhcozNLORERjRxWrogovAem2z0ljA9A8iyzFo+mrNKbbZzzMwMiJef2wFEeIfMYY9vDFBHS9trzB+rXjXNB7vQieDql4FlH5nqvg3rZR/hM3yJ6FqojNWSjMaaGsvtjqqESqg80+BRoCw3VN77Sz4FIIkqrVDscYrjLUSdz+vXFgUa6nAkvnLTLvY9GjPqm/If3TZi+BZpaY2poHiqAJtbCAf2RCqC8qwDKuxYMCHgFDXbuh1gpVFIAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
                                       </scg:List>
                                     </uix:TargetAnchorable.Anchors>
@@ -230,7 +232,7 @@
                             </Sequence>
                           </TryCatch.Try>
                           <TryCatch.Catches>
-                            <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="454,212" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                            <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="454,210" sap2010:WorkflowViewState.IdRef="Catch`1_1">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -241,7 +243,7 @@
                                 <ActivityAction.Argument>
                                   <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                                 </ActivityAction.Argument>
-                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,143" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(&quot;Brand&quot;).ToString + CurrentRow(&quot;Model&quot;).ToString + &quot; in Shopee catch loop&quot;]" />
+                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,141" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(&quot;Brand&quot;).ToString + CurrentRow(&quot;Model&quot;).ToString + &quot; in Shopee catch loop&quot;]" />
                               </ActivityAction>
                             </Catch>
                           </TryCatch.Catches>
@@ -312,11 +314,11 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                               <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(&quot;Brand&quot;).ToString + CurrentRow(&quot;Model&quot;).ToString + &quot; Start Lazada try loop&quot;]" />
-                              <uix:NSetText DisplayName="Set Text 'shopee.sg/Sony-Singapor…'" sap:VirtualizedContainerService.HintSize="434,162" sap2010:WorkflowViewState.IdRef="NSetText_2" ScopeIdentifier="fd87e0d2-bd3f-4a06-8dd3-ecd7620dbdee" Text="[CurrentRow(&quot;URL (Lazada)&quot;).ToString]" Version="V3">
+                              <uix:NSetText DelayAfter="[(new Random().Next(0,1))]" DisplayName="Set Text 'shopee.sg/Sony-Singapor…'" sap:VirtualizedContainerService.HintSize="434,162" sap2010:WorkflowViewState.IdRef="NSetText_2" ScopeIdentifier="fd87e0d2-bd3f-4a06-8dd3-ecd7620dbdee" Text="[CurrentRow(&quot;URL (Lazada)&quot;).ToString]" Version="V3">
                                 <uix:NSetText.Target>
                                   <uix:TargetAnchorable DesignTimeRectangle="201, 59, 1313, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'shopee.sg/Sony-Singapor…'" FullSelectorArgument="&lt;ctrl name='Sony Singapore 65&amp;quot;X85L | 4K Full Array LED TV | BRAVIA | 65X85L *' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Sony Singapore 65&amp;quot;X85L | 4K Full Array LED TV | BRAVIA | 65X85L *' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' automationid='' /&gt;" Guid="dcf8e9c3-1064-42bf-86db-d5ae3eefbd0e" InformativeScreenshot="dda0223cd0d907425a74b8b3fce329e9.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Sony Singapore 65&amp;quot;X85L | 4K Full Array LED TV | BRAVIA | 65X85L *' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
                                     <uix:TargetAnchorable.Anchors>
-                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                         <uix:Target DesignTimeRectangle="36, 8, 256, 41" ElementType="TabPage" FriendlyName="'Close'" FullSelectorArgument="&lt;ctrl name='Sony Singapore 65&amp;quot;X85L | 4K Full Array LED TV | BRAVIA | 65X85L *' role='pane' /&gt;&lt;ctrl name='Sony Singapore 65&amp;quot;X85L | 4K Full Array LED TV | BRAVIA | 65X85L *' role='page tab' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Sony Singapore 65&amp;quot;X85L | 4K Full Array LED TV | BRAVIA | 65X85L *' role='pane' /&gt;&lt;ctrl name='Sony Singapore 65&amp;quot;X85L | 4K Full Array LED TV | BRAVIA | 65X85L *' role='page tab' automationid='' check:fulltext='Close' /&gt;" SearchSteps="Selector, FuzzySelector" />
                                       </scg:List>
                                     </uix:TargetAnchorable.Anchors>
@@ -334,7 +336,7 @@
                                 <uix:NGetText.Target>
                                   <uix:TargetAnchorable BrowserURL="https://www.lazada.sg/products/samsung-rt25faradsass-top-mount-freezer-refrigerator-255l-2-ticks-i1738644224-s8691919196.html" DesignTimeRectangle="725, 538, 109, 37" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'$625.00'" FullSelectorArgument="&lt;webctrl parentid='module_product_price_1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='module_product_price_1' tag='SPAN' type='' class='notranslate pdp-price pdp-price_type_normal pdp-price_color_orange pdp-price_size_xl' /&gt;" Guid="0c16585e-5591-4e1b-858d-3bfe12e349ef" InformativeScreenshot="ea4c2d032cf1cf1131c4b197803aef45.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='nameStorage:?wm_referrer=https%3A%2F%2Fwww.lazada.sg%2Fproducts%2Fsamsung-rr39m71357fss-1-door-refrigerator-385l-4-ticks-i1738628331-s8691819257.html&amp;amp;refer_pv_id=3a606c90Rnesk5' title='Samsung RT25FARADSA/SS, Top Mount Freezer Refrigerator, 255L, 2 Ticks | Lazada Singapore' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
                                     <uix:TargetAnchorable.Anchors>
-                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                         <uix:Target DesignTimeRectangle="725, 488, 34, 20" ElementType="Text" FriendlyName="'Brand'" FullSelectorArgument="&lt;webctrl parentid='module_product_brand_1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='module_product_brand_1' tag='SPAN' type='' class='pdp-product-brand__name' aaname='Brand: ' check:innerText='Brand:' /&gt;" SearchSteps="FuzzySelector" />
                                       </scg:List>
                                     </uix:TargetAnchorable.Anchors>
@@ -479,7 +481,7 @@
                                 <uix:NGetText.Target>
                                   <uix:TargetAnchorable BrowserURL="https://shopee.sg/Panasonic-405L-NR-BX471CPSS-Premium-Bottom-Freezer-2-Doors-Refrigerator-with-PrimeFresh--i.165734283.8146144127" DesignTimeRectangle="889, 434, 121, 32" DesignTimeScaleFactor="0.8999999761581421" ElementType="Text" FriendlyName="'$1,018.00'" FullSelectorArgument="&lt;webctrl aaname='$1,018.00' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='DIV' type='' class='IZPeQz B67UQ0' /&gt;" Guid="e2dec50b-1cce-4d67-8692-7c304550cf8c" InformativeScreenshot="50819456bace3f03c789f9b7a7c7270d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='nameStorage:?wm_referrer=https%3A%2F%2Fwww.lazada.sg%2Fproducts%2Fhisense-l9h-100120-inch-4k-ultra-short-throw-laser-cinema-tv-alr-screen-3000-lumens-bt2020-107-i-memc-ultra-motion-hdr-10-dolby-atmos-ultra-short-throw-ust-laser-projector-ambient-light-reje*' title='Panasonic 405L NR-BX471CPSS Premium Bottom Freezer 2 Doors Refrigerator with PrimeFresh+ | Shopee Singapore' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
                                     <uix:TargetAnchorable.Anchors>
-                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                         <uix:Target DesignTimeRectangle="1421, 356, 48, 24" ElementType="Button" FriendlyName="'Report'" FullSelectorArgument="&lt;webctrl class='YysGiT' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl class='YysGiT' tag='BUTTON' type='' aaname='Report' check:innerText='Report' /&gt;" SearchSteps="FuzzySelector" />
                                       </scg:List>
                                     </uix:TargetAnchorable.Anchors>
@@ -602,7 +604,7 @@
                                 <uix:NGetText.Target>
                                   <uix:TargetAnchorable BrowserURL="https://www.lazada.sg/products/toshiba-gr-rs780wi-pgx22-side-by-side-fridge-601l-i3116198125-s21195852519.html" DesignTimeRectangle="725, 538, 132, 37" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'$1,569.00'" FullSelectorArgument="&lt;webctrl parentid='module_product_price_1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='module_product_price_1' tag='SPAN' type='' class='notranslate pdp-price pdp-price_type_normal pdp-price_color_orange pdp-price_size_xl' /&gt;" Guid="5b2946c0-29a4-47f2-b750-cb6f7eadde4d" InformativeScreenshot="cb296fd0b45a25d5c4f11dfbf225a496.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='nameStorage:?wm_referrer=https%3A%2F%2Fwww.lazada.sg%2Fproducts%2Ftoshiba-gr-rf532we-pgx22-black-french-door-refrigerator-503l-energy-rating-2-ticks-i2138875772-s12161555853.html&amp;amp;refer_pv_id=24fc145bFJyvyG' title='Toshiba GR-RS780WI-PGX(22) Side by Side Fridge, 601L | Lazada Singapore' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
                                     <uix:TargetAnchorable.Anchors>
-                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                         <uix:Target DesignTimeRectangle="725, 488, 34, 20" ElementType="Text" FriendlyName="'Brand'" FullSelectorArgument="&lt;webctrl parentid='module_product_brand_1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='module_product_brand_1' tag='SPAN' type='' class='pdp-product-brand__name' aaname='Brand: ' check:innerText='Brand:' /&gt;" SearchSteps="FuzzySelector" />
                                       </scg:List>
                                     </uix:TargetAnchorable.Anchors>
