@@ -125,7 +125,7 @@
     </sap:WorkflowViewStateService.ViewState>
     <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dt_TV]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="388,88" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="TV" WorkbookPath="data/Comeptitor_Analysis_Template.xlsx" />
     <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dt_Fridge]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="388,88" sap2010:WorkflowViewState.IdRef="ReadRange_2" SheetName="Fridge" WorkbookPath="data/Comeptitor_Analysis_Template.xlsx" />
-    <uix:NApplicationCard sap2010:Annotation.AnnotationText="Extract TV Sheet&#xA;" AttachMode="ByInstance" CloseMode="Never" DisplayName="TV Sheet Extraction" sap:VirtualizedContainerService.HintSize="434,811" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="fd87e0d2-bd3f-4a06-8dd3-ecd7620dbdee" Version="V2">
+    <uix:NApplicationCard sap2010:Annotation.AnnotationText="Extract TV Sheet&#xA;" AttachMode="ByInstance" CloseMode="Never" DisplayName="TV Sheet Extraction" sap:VirtualizedContainerService.HintSize="388,94" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="fd87e0d2-bd3f-4a06-8dd3-ecd7620dbdee" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -152,7 +152,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:LogMessage>
-                  <If Condition="[String.IsNullOrEmpty(CurrentRow(&quot;URL (Shopee)&quot;).ToString.Trim)]" DisplayName="If - Shopee" sap:VirtualizedContainerService.HintSize="564,1187" sap2010:WorkflowViewState.IdRef="If_1">
+                  <If Condition="[String.IsNullOrEmpty(CurrentRow(&quot;URL (Shopee)&quot;).ToString.Trim)]" DisplayName="If - Shopee" sap:VirtualizedContainerService.HintSize="258,52" sap2010:WorkflowViewState.IdRef="If_1">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -262,7 +262,7 @@
                       </Sequence>
                     </If.Else>
                   </If>
-                  <If Condition="[String.IsNullOrEmpty(CurrentRow(&quot;URL (Lazada)&quot;).ToString.Trim)]" DisplayName="If - Lazada" sap:VirtualizedContainerService.HintSize="258,52" sap2010:WorkflowViewState.IdRef="If_2">
+                  <If Condition="[String.IsNullOrEmpty(CurrentRow(&quot;URL (Lazada)&quot;).ToString.Trim)]" DisplayName="If - Lazada" sap:VirtualizedContainerService.HintSize="564,1269" sap2010:WorkflowViewState.IdRef="If_2">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -334,10 +334,10 @@
                               <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="Delay_4" />
                               <uix:NGetText DisplayName="Get Text 'Brand'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="fd87e0d2-bd3f-4a06-8dd3-ecd7620dbdee" TextString="[LazadaPromotionPrice]" Version="V3">
                                 <uix:NGetText.Target>
-                                  <uix:TargetAnchorable BrowserURL="https://www.lazada.sg/products/samsung-rt25faradsass-top-mount-freezer-refrigerator-255l-2-ticks-i1738644224-s8691919196.html" DesignTimeRectangle="725, 538, 109, 37" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'$625.00'" FullSelectorArgument="&lt;webctrl parentid='module_product_price_1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='module_product_price_1' tag='SPAN' type='' class='notranslate pdp-price pdp-price_type_normal pdp-price_color_orange pdp-price_size_xl' /&gt;" Guid="0c16585e-5591-4e1b-858d-3bfe12e349ef" InformativeScreenshot="ea4c2d032cf1cf1131c4b197803aef45.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='nameStorage:?wm_referrer=https%3A%2F%2Fwww.lazada.sg%2Fproducts%2Fsamsung-rr39m71357fss-1-door-refrigerator-385l-4-ticks-i1738628331-s8691819257.html&amp;amp;refer_pv_id=3a606c90Rnesk5' title='Samsung RT25FARADSA/SS, Top Mount Freezer Refrigerator, 255L, 2 Ticks | Lazada Singapore' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable BrowserURL="https://www.lazada.sg/products/panasonic-405l-nr-bx471cpss-premium-bottom-freezer-2-doors-refrigerator-with-primefresh-free-delivery-installation-disposal-i1710417989-s8327249478.html" CvTextArea="365, 632, 132, 33" CvType="AnyWordGroup" DesignTimeRectangle="366, 631, 132, 37" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'$1,203.00'" FullSelectorArgument="&lt;webctrl parentid='module_product_price_1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='module_product_price_1' tag='SPAN' type='' class='notranslate pdp-price pdp-price_type_normal pdp-price_color_orange pdp-price_size_xl' /&gt;" Guid="8c73c4b1-24c1-4b19-a193-8116d9144d0a" InformativeScreenshot="89370b14fe75b625b2f3359c73b45eb4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Panasonic 405L NR-BX471CPSS Premium Bottom Freezer 2 Doors Refrigerator with PrimeFresh+ [Free delivery, installation, disposal] | Lazada Singapore' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
                                     <uix:TargetAnchorable.Anchors>
-                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                        <uix:Target DesignTimeRectangle="725, 488, 34, 20" ElementType="Text" FriendlyName="'Brand'" FullSelectorArgument="&lt;webctrl parentid='module_product_brand_1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='module_product_brand_1' tag='SPAN' type='' class='pdp-product-brand__name' aaname='Brand: ' check:innerText='Brand:' /&gt;" SearchSteps="FuzzySelector" />
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                        <uix:Target CvTextArea="365, 508, 35, 12" CvTextArgument="Brand:" CvType="Text" DesignTimeRectangle="366, 505, 34, 20" ElementType="Text" FriendlyName="'Brand'" FullSelectorArgument="&lt;webctrl parentid='module_product_brand_1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='module_product_brand_1' tag='SPAN' type='' class='pdp-product-brand__name' aaname='Brand: ' check:innerText='Brand:' /&gt;" SearchSteps="FuzzySelector, CV" />
                                       </scg:List>
                                     </uix:TargetAnchorable.Anchors>
                                   </uix:TargetAnchorable>
@@ -401,7 +401,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <uix:NApplicationCard sap2010:Annotation.AnnotationText="Extract Fridge Sheet&#xA;" AttachMode="ByInstance" CloseMode="Never" DisplayName="Fridge Sheet Extraction" sap:VirtualizedContainerService.HintSize="388,94" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="fd87e0d2-bd3f-4a06-8dd3-ecd7620dbdee" Version="V2">
+    <uix:NApplicationCard sap2010:Annotation.AnnotationText="Extract Fridge Sheet&#xA;" AttachMode="ByInstance" CloseMode="Never" DisplayName="Fridge Sheet Extraction" sap:VirtualizedContainerService.HintSize="434,811" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="fd87e0d2-bd3f-4a06-8dd3-ecd7620dbdee" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -530,7 +530,7 @@
                       </Sequence>
                     </If.Else>
                   </If>
-                  <If Condition="[String.IsNullOrEmpty(CurrentRow(&quot;URL (Lazada)&quot;).ToString.Trim)]" DisplayName="If - Lazada" sap:VirtualizedContainerService.HintSize="258,52" sap2010:WorkflowViewState.IdRef="If_4">
+                  <If Condition="[String.IsNullOrEmpty(CurrentRow(&quot;URL (Lazada)&quot;).ToString.Trim)]" DisplayName="If - Lazada" sap:VirtualizedContainerService.HintSize="410,527" sap2010:WorkflowViewState.IdRef="If_4">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -548,13 +548,13 @@
                       </Sequence>
                     </If.Then>
                     <If.Else>
-                      <Sequence sap:VirtualizedContainerService.HintSize="530,974" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                      <Sequence sap:VirtualizedContainerService.HintSize="300,232" sap2010:WorkflowViewState.IdRef="Sequence_20">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="488,52" sap2010:WorkflowViewState.IdRef="LogMessage_15" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(&quot;Brand&quot;).ToString + CurrentRow(&quot;Model&quot;).ToString + &quot; in Lazada else loop&quot;]">
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="258,52" sap2010:WorkflowViewState.IdRef="LogMessage_15" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[CurrentRow(&quot;Brand&quot;).ToString + CurrentRow(&quot;Model&quot;).ToString + &quot; in Lazada else loop&quot;]">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -602,10 +602,10 @@
                               <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="Delay_8" />
                               <uix:NGetText DisplayName="Get Text 'Brand'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="fd87e0d2-bd3f-4a06-8dd3-ecd7620dbdee" TextString="[LazadaPromotionPrice]" Version="V3">
                                 <uix:NGetText.Target>
-                                  <uix:TargetAnchorable BrowserURL="https://www.lazada.sg/products/toshiba-gr-rs780wi-pgx22-side-by-side-fridge-601l-i3116198125-s21195852519.html" DesignTimeRectangle="725, 538, 132, 37" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'$1,569.00'" FullSelectorArgument="&lt;webctrl parentid='module_product_price_1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='module_product_price_1' tag='SPAN' type='' class='notranslate pdp-price pdp-price_type_normal pdp-price_color_orange pdp-price_size_xl' /&gt;" Guid="5b2946c0-29a4-47f2-b750-cb6f7eadde4d" InformativeScreenshot="cb296fd0b45a25d5c4f11dfbf225a496.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='nameStorage:?wm_referrer=https%3A%2F%2Fwww.lazada.sg%2Fproducts%2Ftoshiba-gr-rf532we-pgx22-black-french-door-refrigerator-503l-energy-rating-2-ticks-i2138875772-s12161555853.html&amp;amp;refer_pv_id=24fc145bFJyvyG' title='Toshiba GR-RS780WI-PGX(22) Side by Side Fridge, 601L | Lazada Singapore' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable BrowserURL="https://www.lazada.sg/products/panasonic-405l-nr-bx471cpss-premium-bottom-freezer-2-doors-refrigerator-with-primefresh-free-delivery-installation-disposal-i1710417989-s8327249478.html" CvTextArea="365, 632, 132, 33" CvType="AnyWordGroup" DesignTimeRectangle="366, 631, 132, 37" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'$1,203.00'" FullSelectorArgument="&lt;webctrl parentid='module_product_price_1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='module_product_price_1' tag='SPAN' type='' class='notranslate pdp-price pdp-price_type_normal pdp-price_color_orange pdp-price_size_xl' /&gt;" Guid="fdfdbb3b-b3d9-4c02-9e44-a9c7d30ba311" InformativeScreenshot="ad5599b875f8752e6480aab243c7b3c8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Panasonic 405L NR-BX471CPSS Premium Bottom Freezer 2 Doors Refrigerator with PrimeFresh+ [Free delivery, installation, disposal] | Lazada Singapore' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
                                     <uix:TargetAnchorable.Anchors>
-                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                        <uix:Target DesignTimeRectangle="725, 488, 34, 20" ElementType="Text" FriendlyName="'Brand'" FullSelectorArgument="&lt;webctrl parentid='module_product_brand_1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='module_product_brand_1' tag='SPAN' type='' class='pdp-product-brand__name' aaname='Brand: ' check:innerText='Brand:' /&gt;" SearchSteps="FuzzySelector" />
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                        <uix:Target CvTextArea="365, 508, 35, 12" CvTextArgument="Brand:" CvType="Text" DesignTimeRectangle="366, 505, 34, 20" ElementType="Text" FriendlyName="'Brand'" FullSelectorArgument="&lt;webctrl parentid='module_product_brand_1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='module_product_brand_1' tag='SPAN' type='' class='pdp-product-brand__name' aaname='Brand: ' check:innerText='Brand:' /&gt;" SearchSteps="FuzzySelector, CV" />
                                       </scg:List>
                                     </uix:TargetAnchorable.Anchors>
                                   </uix:TargetAnchorable>
